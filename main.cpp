@@ -1,3 +1,18 @@
+#include "mbed.h"a
+
+DigitalOut led1(LED1, 0);
+
+int main()
+{
+    while(true)
+    {
+        led1 = !led1;
+
+        wait(0.5);
+    }
+}
+
+#if 0
 #include "mbed.h"
 
 Timer t;
@@ -41,4 +56,4 @@ int main() {
         wait(0.5);
     }
 }
-
+#endif // 0
